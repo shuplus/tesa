@@ -3,13 +3,50 @@
   <head>
     <meta charset="utf-8">
     <title>tesa_painting</title>
+    <style>
+      a{
+        color:skyblue;
+        text-decoration: none;
+      }
+      .top_menu{
+        border-bottom: medium black solid;
+        padding:15px;
+      }
+      .top_menu > li{
+        /*float: left;*/
+        width: 100px; /**각 메뉴 사이즈 정의**/
+        padding: 10px; /**상자 내부 여백**/
+        text-align: center; /**가운데정렬(좌우)**/
+        margin: 5px; /**상자 외부 여백**/
+        background: gray;
+        border: medium black solid;
+        display: inline;
+      }
+      .left_menu{
+        border-right: medium solid black;
+        width:150px;
+      }
+
+    </style>
+    <!-- 웹로그 분석용 : Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-175492826-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-175492826-1');
+    </script>
   </head>
   <body>
     <a href="tesa_main.html"><img src="img_rsc/tesa_S.png" width="100"></a>
     <!--상단메뉴-->
-    tattoo  painting  writing
+    <ul class="top_menu">
+       <li><a href="tesa_tattoo.html">tattoo</a></li>
+       <li>painting</li>
+       <li><a href="tesa_writing.html" >writing</a></li>
+    </ul>
    <!--좌측메뉴-->
-    <ul>
+    <ul class="left_menu">
         <li>프로필</li>
         <li>portfolio</li>
     </ul>

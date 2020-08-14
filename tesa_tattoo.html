@@ -3,22 +3,36 @@
   <head>
     <meta charset="utf-8">
     <title>tesa_tattoo</title>
-    <!-- 분석용 : Global site tag (gtag.js) - Google Analytics -->
+    <style>
+      a{
+        color:skyblue;
+        text-decoration: none;
+      }
+      h5{
+        font-size: 150%;
+      }
+      /**ul{
+        border-width: medium;
+        border-color: gray;
+        border-style: solid;
+        display: inline;
+      }**/
+    </style>
+    <!-- 웹로그분석용 : Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-175492826-1"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
       gtag('config', 'UA-175492826-1');
     </script>
   </head>
   <body>
     <a href="tesa_main.html"><img src="img_rsc/tesa_S.png" width="100"></a>
     <!--상단메뉴-->
-    tattoo  painting  writing
+    tattoo  <a href="tesa_painting.html" >painting</a>  <a href="tesa_writing.html" >writing</a>
     <!--좌측메뉴-->
-    <ul>
+    <ul style="color:gray;">
         <li>예약문의</li>
         <li>도안</li>
         <li>Work</li>
