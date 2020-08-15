@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"> <!--언어:영어, 왼쪽 정렬-->
+  <head>
+    <meta charset="utf-8">
+    <title>tesa_tattoo</title>
+    <!--CSS태그-->
+    <style>
+      a{ /**링크 디자인**/
+        color:skyblue;
+        text-decoration: none;
+      }
+      #top_grid{ /**상단(로고+상단메뉴)디자인**/
+        display:grid;
+        grid-template-columns: 150px 1fr;
+        border-bottom: thin black solid;
+      }
+          #top_menu{ /**상단메뉴 디자인**/
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr; /**가로로 정렬**/
+            list-style: none; /**구분기호 삭제**/
+            text-align: center; /**중간정렬(좌우)**/
+          }
+      #center_grid{ /**중앙(좌측메뉴+본문)디자인**/
+        display: grid;
+        grid-template-columns: 150px 1fr;
+      }
+          #left_menu{
+            color:gray;
+            border-right: thin black solid;
+            padding-left: 30px; padding-top:50px;
+            margin-top: 0px; margin-bottom: 0px;
+          }
+          #main_grid{
+            padding-left: 100px; padding-top:30px;
+          }
+    </style>
+    <!-- 웹로그분석용 : Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-175492826-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-175492826-1');
+    </script>
+  </head>
+
+  <body>
+    <!--상단(로고+상단메뉴)-->
+    <div id="top_grid">
+      <!--로고-->
+      <a href="tesa_main.html"><img src="img_rsc/tesa_S.png" width="100"></a>
+      <!--상단메뉴-->
+      <ul id="top_menu">
+        <li><a href="tesa_1_tattoo.html">tattoo</a></li>
+        <li><a href="tesa_2_painting.html">painting</a></li>
+        <li>writing</li>
+      </ul>
+    </div>
+    <!--중앙(좌측메뉴+본문)-->
+    <div id="center_grid">
+      <!--좌측메뉴-->
+      <ul id="left_menu">
+        <li>준비중</li>
+        <li>준비주웅</li>
+        <li>준비주우웅</li>
+      </ul>
+      <!--본문-->
+      <div id="main_grid">
+        <img src="img_rsc/fighting.jpg" width="700">
+      </div>
+    </div>
+  </body>
+</html>
