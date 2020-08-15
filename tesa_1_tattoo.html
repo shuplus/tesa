@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"> <!--언어:영어, 왼쪽 정렬-->
+  <head>
+    <meta charset="utf-8">
+    <title>tesa_tattoo</title>
+    <!--CSS태그-->
+    <style>
+      a{ /**링크 디자인**/
+        color:skyblue;
+        text-decoration: none;
+      }
+      #top_grid{ /**상단(로고+상단메뉴)디자인**/
+        display:grid;
+        grid-template-columns: 150px 1fr;
+        border-bottom: thin black solid;
+      }
+      #top_menu{ /**상단메뉴 디자인**/
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr; /**가로로 정렬**/
+        list-style: none; /**구분기호 삭제**/
+        text-align: center; /**중간정렬(좌우)**/
+      }
+      #center_grid{ /**중앙(좌측메뉴+본문)디자인**/
+        display: grid;
+        grid-template-columns: 150px 1fr;
+      }
+      #left_menu{
+        color:gray;
+        border-right: thin black solid;
+      }
+    </style>
+    <!-- 웹로그분석용 : Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-175492826-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-175492826-1');
+    </script>
+  </head>
+
+  <body>
+    <!--상단(로고+상단메뉴)-->
+    <div id="top_grid">
+      <!--로고-->
+      <a href="tesa_main.html"><img src="img_rsc/tesa_S.png" width="100"></a>
+      <!--상단메뉴-->
+      <ul id="top_menu">
+        <li>tattoo</li>
+        <li><a href="tesa_2_painting.html">painting</a></li>
+        <li><a href="tesa_3_writing.html" >writing</a></li>
+      </ul>
+    </div>
+    <!--중앙(좌측메뉴+본문)-->
+    <div id="center_grid">
+      <!--좌측메뉴-->
+      <ul id="left_menu">
+          <li>예약문의</li>
+          <li>도안</li>
+          <li>Work</li>
+          <li>Healed</li>
+      </ul>
+      <!--본문-->
+      <div id="main_grid">
+        <!--본문:예약문의-->
+        <h5>예약문의/방법</h5>
+        <ol>
+          <li>위치, 크기</li>
+          <li>날짜</li>
+          <li>디자인</li>
+        </ol>
+        <!--본문:연락처-->
+        <h5>contact</h5>
+        <ul>
+          <li>instagram <a href="https://www.instagram.com/tt_tesa/" target="_blank">@tt_tesa</a></li>
+          <li>open_kakao @abc</li>
+        </ul>
+        <!--본문:달력-->
+        <h5>8월</h5>
+        <table>
+          <td>일</td>
+          <td>월</td>
+          <td>화</td>
+          <td>수</td>
+          <td>목</td>
+          <td>금</td>
+          <td>토</td>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>

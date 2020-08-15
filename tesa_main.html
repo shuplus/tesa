@@ -8,17 +8,14 @@
         color:black;/**모든 a태그에 대해 black으로 표현**/
         text-decoration: none; /**text의 장식을 없앰 : 링크에 밑줄 없어짐**/
       }
-      .saw{/**class 선택자**/
-        color:gray;/**saw class에 대해 gray로 표현**/
-      }
       ul{
         list-style: none; /**list의 구분문자를 삭제**/
       }
-      img{/**이미지 테두리**/
+      /**img{/**이미지 테두리
         border-width: medium;
         border-color: skyblue;
         border-style: solid;
-      }
+      }**/
     </style>
     <!-- 웹로그 분석용 : Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-175492826-1"></script>
@@ -30,16 +27,17 @@
     </script>
   </head>
   <body>
-    <div style="text-align:center;"><!--div:레이아웃용 태그 (중앙정렬)-->
     <!--메인화면로고-->
-    <img src="img_rsc/tesa_B.png" width=100%>
-    <!--메인화면 메뉴리스트-->
-    <ul>
-        <li><a href="tesa_tattoo.html" class="saw">tattoo</a></li>
-        <li><a href="tesa_painting.html" class="saw">painting</a></li>
-        <li><a href="tesa_writing.html">writing</a></li>
-    </ul>
+    <div style="text-align:center;"><!--div:레이아웃용 태그 (중앙정렬)-->
+    <img src="img_rsc/tesa_B.png" width=600px>
     </div>
+    <!--메인화면 메뉴리스트-->
+    <ul style="text-align:center;">
+        <li><a href="tesa_1_tattoo.html" >tattoo</a></li>
+        <li><a href="tesa_2_painting.html" >painting</a></li>
+        <li><a href="tesa_3_writing.html">writing</a></li>
+    </ul>
+
     <!--채팅-->
     <!--Start of Tawk.to Script-->
     <script type="text/javascript">
